@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <header className="app__header">Guess...</header>
       <main className="app__main">
-        <InputBar onNameChange={() => setCurrentName(currentName)} />
+        <InputBar onNameChange={(name) => setCurrentName(name)} />
         <div className="app__content--results">
           <Switch>
             <Route path="/age">

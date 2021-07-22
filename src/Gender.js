@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function Gender({ name }) {
-  const [gender, setGender] = useState("");
+  const [gender, setGender] = useState([]);
   useEffect(() => {
     const url = `https://api.genderize.io/?name=${name}`;
     fetch(url)

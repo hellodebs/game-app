@@ -8,7 +8,7 @@ export default function InputBar({ onNameChange }) {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    onNameChange({ name });
+    onNameChange(name);
     e.target.reset();
   }
   return (

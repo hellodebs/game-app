@@ -8,7 +8,7 @@ export default function Age({ name }) {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        //console.log(data.age);
+        console.log(data);
         setAge(data.age);
       });
   }, [name]);
