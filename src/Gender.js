@@ -8,7 +8,6 @@ export default function Gender({ name }) {
       .then((response) => response.json())
       .then((data) => {
         setGender(data.gender);
-        //console.log(data.gender);
       });
   }, [name]);
   return <p>{gender}</p>;

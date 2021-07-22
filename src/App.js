@@ -10,7 +10,19 @@ function App() {
   const [currentName, setCurrentName] = useState("");
   return (
     <div className="App">
-      <header className="app__header">Guess...</header>
+      <header className="app__header">
+        <Switch>
+          <Route>
+            <h2 path="/path">Guess age</h2>
+          </Route>
+          <Route>
+            <h2 path="/nation">Guess nation</h2>
+          </Route>
+          <Route>
+            <h2 path="/gender">Guess gender</h2>
+          </Route>
+        </Switch>
+      </header>
       <main className="app__main">
         <InputBar onNameChange={(name) => setCurrentName(name)} />
         <div className="app__content--results">
@@ -36,7 +48,7 @@ function App() {
           <NavLink className="app__color--nation" to="/nation">
             Nation
           </NavLink>
-          <NavLink className="app__color--gender" to="gender">
+          <NavLink className="app__color--gender" to="/gender">
             Gender
           </NavLink>
         </nav>

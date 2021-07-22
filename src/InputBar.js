@@ -22,7 +22,7 @@ export default function InputBar({ onNameChange }) {
         value={name}
       />
       <p>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </p>
     </form>
   );
