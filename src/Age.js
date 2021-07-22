@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function Age({ name }) {
-  const [age, setAge] = useState([]);
+  const [age, setAge] = useState("");
 
   useEffect(() => {
     const url = `https://api.agify.io?name=${name}`;

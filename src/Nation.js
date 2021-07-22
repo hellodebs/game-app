@@ -3,7 +3,7 @@ export default function Nation({ name }) {
   const [nation, setNation] = useState([]);
 
   useEffect(() => {
-    const url = `https://api.nationalize.io?${name}`;
+    const url = `https://api.nationalize.io?name=${name}`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => {

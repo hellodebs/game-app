@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function InputBar({ onNameChange }) {
   const [name, setName] = useState([""]);
+
   function handleOnChange(e) {
     setName(e.target.value);
   }
